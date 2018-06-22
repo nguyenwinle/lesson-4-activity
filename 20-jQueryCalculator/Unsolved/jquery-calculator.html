@@ -128,14 +128,27 @@
       
       */
 
-      var input1;
-      var input2;
-      var input3;
+      var input1 = 0;
+      var input2 = 0;
+      var operator =" ";
       var answer;
+      var checkingOperator = false;
+      var isCalc = false;
 
-      $(".btn").on("click", function () {
-        $(this).attr("value");
+      $(".number").on("click", function () {
+        var ppp = $(this).attr("value");
+        $("#first-number").append(ppp);
       });
+      $(".operator").on("click", function () {
+        var ttt = $(this).attr("value");
+        $("#first-number").append(ttt); 
+      });
+      // $(".equal").on("click", function () {
+      //   alert($(this).attr("value"));
+      // });
+      // $(".clear").on("click", function () {
+      //   alert($(this).attr("value"));
+      // });
     });
 
   </script>
